@@ -39,23 +39,14 @@ function Contact() {
               name="username"
               id="name"
               placeholder="Enter Your Name"
+              required
             />
 
             <label>Email:</label>
-            <input
-              type="text"
-              name="usermail"
-              id="email"
-              placeholder="Enter Your email"
-            />
+            <input type="text" name="usermail" placeholder="Enter Your email" required/>
 
             <label>Message:</label>
-            <textarea
-              row="20"
-              column="30"
-              name="usermessage"
-              placeholder="enter your message"
-            ></textarea>
+            <textarea row="20" column="30" name="usermessage" placeholder="enter your message" required/>
             <div className="btn">
               <button>Send Me</button>
             </div>
