@@ -1,0 +1,26 @@
+/* ---footer section----- */
+
+.footer {
+    
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+   position: relative; 
+      width: 100%;
+      background:transparent;
+      min-height: 80px;
+      padding: 1px; 
+       margin-top: 50px; 
+       background-color:#001B79; 
+      
+    }
+    
+    
+    .footer p {
+      color:#F5F5DC;
+      margin: 7px 0 3px 0;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      align-items: center;
+    }

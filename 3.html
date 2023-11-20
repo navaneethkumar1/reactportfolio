@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+body{
+background-color: antiquewhite;
+  }
+.mobile-container {
+  max-width: 48000px;
+  margin: auto;
+  background-color:antiquewhite;
+  height: 500px;
+  color: rgb(124, 104, 104);
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #bc9e9e;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display:none;
+}
+
+.topnav a {
+  color: rgb(164, 137, 137);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: rgb(181, 166, 166);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #bca2a2;
+  color: rgb(151, 127, 127);
+}
+
+.active {
+  background-color: #c6c29b;
+  color: white;
+}
+</style>
+<body>
+<div class="mobile-container">
+<div class="topnav">
+  <a href="#home" class="active">home</a>
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+</div>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>

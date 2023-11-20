@@ -1,0 +1,60 @@
+h1 {
+  text-align: center;
+  color: #2F89FC;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: 0;
+  padding: 20px;
+  margin-top:10%;
+  margin-bottom:10%;
+  overflow: hidden;
+}
+
+.About {
+  flex: 1;
+  flex-direction: row;
+  font-size:20px;
+  color:#F5EBEB;
+  margin-top: 10px;
+  margin-left:10%;
+}
+
+.photo {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.photo img {
+  max-width: 50%;
+  height: auto;
+  clip-path: ellipse();
+}
+
+@media (max-width: 600px) {
+
+
+  .About,
+  .photo {
+    flex: 1;
+    width: 100%;
+    margin-right: 0;
+    text-align: left;
+    padding: 3px;
+  }
+
+  .About {
+    margin-bottom: 20px;
+  }
+
+  .photo img {
+    max-width: 100%;
+    clip-path: ellipse(); 
+  }
+}

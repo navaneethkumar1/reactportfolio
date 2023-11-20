@@ -1,0 +1,25 @@
+.education{
+    color: antiquewhite;
+}
+
+.education table{
+    width: 50%;
+    border-collapse: collapse;
+  }
+  
+ .education th,td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .education table{
+        width:50%;
+    }
+   .education th,td {
+      font-size: 18px; 
+    }
+  }
+  
