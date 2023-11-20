@@ -1,30 +1,69 @@
 import "../Css/Contact.css";
-function Contact(){
-    return(
-        <>
-<div className="contact">
-    <div className="table_container">
-        <h1>Contact Me</h1>
-        
-            <form action="">
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
-                
-                <label>Name:</label>
-                <input type="text" id="name" placeholder="Enter Your Name"/>
-        
-                
-                <label>Email:</label>
-                <input type="text" id="email" placeholder="Enter Your email"/>
-            
-                    <label>message</label>
-                    <textarea row="20" column="30" placeholder="enter your message"></textarea>
+function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_1fsdbpb",
+        "template_1gt0hhq",
+        form.current,
+        "FW73KjWMa0m8s6t3_"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("email sent successfully");
+          form.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+  return (
+    <>
+      <div className="contact">
+        <div className="table_container">
+          <h1>Contact Me</h1>
+
+          <form ref={form} onSubmit={sendEmail}>
+            <label>Name:</label>
+            <input
+              type="text"
+              name="username"
+              id="name"
+              placeholder="Enter Your Name"
+            />
+
+            <label>Email:</label>
+            <input
+              type="text"
+              name="usermail"
+              id="email"
+              placeholder="Enter Your email"
+            />
+
+            <label>Message:</label>
+            <textarea
+              row="20"
+              column="30"
+              name="usermessage"
+              placeholder="enter your message"
+            ></textarea>
             <div className="btn">
-                    <button type="submit">Send Me</button>
+              <button>Send Me</button>
             </div>
-            </form>
+          </form>
         </div>
-        </div>
-        </>
-    );
+      </div>
+    </>
+  );
 }
+
 export default Contact;
