@@ -9,10 +9,10 @@
   .tech,
   .tools {
     padding: 50px;
-    border: 1px solid white;
-    background-color: #f5e8b7;
+    border: 3px solid rgb(0, 27, 121);
+    background-color: rgb(180, 189, 255);
     border-radius: 3%;
-    box-shadow: 4px 4px 8px 4px #fff8c9;
+    box-shadow: 4px 4px 8px 4px rgb(180, 189, 255);
     margin:10%;
 
   }
@@ -32,7 +32,7 @@
   
     .tech,
     .tools {
-      width: 50%;
+      width: 70%;
       margin: 10px auto;
       padding: 10px;
     }
@@ -53,5 +53,13 @@
       margin:15px;
       width:10%;
     }
+  }
+  .tech{
+    width: 250px;
+    text-align: center;
+  }
+  .tools{
+    width: 250px;
+    text-align: center;
   }
   

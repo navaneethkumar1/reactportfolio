@@ -28,13 +28,20 @@ h1 {
 .photo {
   flex: 1;
   text-align: center;
-  position: relative;
+  
+  float: right;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
 }
 
 .photo img {
   max-width: 50%;
   height: auto;
   clip-path: ellipse();
+}
+img{
+  z-index: 0;
 }
 
 @media (max-width: 600px) {
@@ -52,9 +59,27 @@ h1 {
   .About {
     margin-bottom: 20px;
   }
+  .photo{
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    width:50%;
+    height: 50%;
+    z-index: 0;
+  }
 
   .photo img {
     max-width: 100%;
     clip-path: ellipse(); 
+    float:right;
+    z-index: 0;
+  }
+  .About{
+    display:flex;
+    flex-direction: column;
+  }
+  .container{
+    display: flex;
+    flex-direction: column-reverse;
   }
 }

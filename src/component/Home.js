@@ -10,12 +10,11 @@ function Home() {
   return (
     <>
     <div className="Aboutme">
-        <h3>Hi,
+        <p>Hi,
           <br/>
            I'm Navaneeth Kumar<br/>
            BE in CSE<br/>
-           CEC<br/>
-           Manglore</h3>
+        </p>
       </div>
       <About/>
       <Skills/>

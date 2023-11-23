@@ -23,13 +23,14 @@ function Card({Certification}){
 }
     return(
         <>
+      
         <div className="my">
-        <h2>{Certification.H}</h2>
-        <p>{Certification.P}</p>
-        <div className="pic">
-        <img src={imagefunction(Certification.i)} alt="c"/>
+            <h2>{Certification.H}</h2>
+            <p>{Certification.P}</p>
+            <img className="certi"src={imagefunction(Certification.i)} alt="c"/>
+        
         </div>
-        </div>
+        
         
 
         </>

@@ -1,5 +1,8 @@
 import React from 'react';
 import Card from './Card';
+import '../Css/certificate.css'
+import '../Css/Card.css'
+
 function Certification()
 {
     const certificationp=[{
@@ -10,12 +13,16 @@ function Certification()
 
         H:"WEB DEV",
         i:"web" 
-    },
+    }
+]
+const certificationq=[
     {
 
         H:"CODE YOURSELF",
         i:"code" 
     },
+
+   
     {
         H:"PYTHON",
         i:"lang"
@@ -24,12 +31,25 @@ function Certification()
 
 ]
 return(
-    <div>
+    <>
+    <h1>certification</h1>
+    <div id="card-flex">
+        
         {
-         certificationP.map((item)=>(<Card Certification={item} />))
+         certificationp.map((item)=>(<Card Certification={item} />))
    
         }
+     
     </div>
+    <div className="cards">
+        
+        {
+         certificationq.map((item)=>(<Card Certification={item} />))
+   
+        }
+     
+    </div>
+    </>
 );
 }
 export default Certification;
