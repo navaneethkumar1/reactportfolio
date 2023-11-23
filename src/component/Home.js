@@ -5,6 +5,7 @@ import Contact from './Contact';
 import Qualification from './Qualification';
 import Footer from './Footer';
 import '../Css/Home.css';
+import Certification from './Skill1';
 function Home() {
   return (
     <>
@@ -18,6 +19,7 @@ function Home() {
       </div>
       <About/>
       <Skills/>
+      <Certification/>
       <Qualification/>
       <Contact/>
       <Footer/>

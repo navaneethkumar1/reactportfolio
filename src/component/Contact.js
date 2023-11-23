@@ -1,15 +1,16 @@
 import "../Css/Contact.css";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-
+import Loader from "./Loader";
 function Contact() {
   const form = useRef();
 
+  // useRef hook is used to create a reference (form) to the form element.
+  const [Loading,setLoading]=useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
+setLoading(true);
+    emailjs.sendForm(
         "service_1fsdbpb",
         "template_1gt0hhq",
         form.current,
@@ -19,6 +20,7 @@ function Contact() {
         (result) => {
           console.log(result.text);
           alert("email sent successfully");
+          setLoading(false);
           form.current.reset();
         },
         (error) => {
@@ -39,17 +41,26 @@ function Contact() {
               name="username"
               id="name"
               placeholder="Enter Your Name"
-              required
+  
             />
 
             <label>Email:</label>
-            <input type="text" name="usermail" placeholder="Enter Your email" required/>
+            <input type="text" name="usermail" placeholder="Enter Your email" />
 
             <label>Message:</label>
-            <textarea row="20" column="30" name="usermessage" placeholder="enter your message" required/>
+            <textarea row="20" column="30" name="usermessage" placeholder="enter your message" />
             <div className="btn">
+              {Loading?
+  "":
               <button>Send Me</button>
+}
             </div>
+            
+            ?{
+Loading?
+            <Loader/> : null}
+
+
           </form>
         </div>
       </div>

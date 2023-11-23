@@ -31,6 +31,7 @@ function Navbar() {
           </li>
           <li>{loc === "/About" ? "" : <Link to="/About">About</Link>}</li>
           <li> {loc === "/Skills" ? "" : <Link to="/Skills">Skills</Link>}</li>
+          <li> {loc === "/Certification" ? "" : <Link to="/Certification">Certification</Link>}</li>
           <li>
             {loc === "/Qualification" ? (
               ""
@@ -59,6 +60,7 @@ function Navbar() {
             {loc === "/" ? "" : <Link to="/">Home</Link>}
             {loc === "/About" ? "" : <Link to="/About">About</Link>}
             {loc === "/Skills" ? "" : <Link to="/Skills">Skills</Link>}
+            {loc === "/Certification" ? "" : <Link to="/Certification">Certification</Link>}
             {loc === "/Qualification" ? (
               ""
             ) : (

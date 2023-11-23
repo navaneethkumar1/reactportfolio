@@ -16,41 +16,31 @@ function Skills() {
       <h1>Skills</h1>
       <div className="skill">
         <div className="tech">
-          <h2>Technical </h2>
+          <h2>Tech </h2>
           <img src={cimage} alt="c language icon" />
-          <p>C</p>
           <br />
           <img src={cplusimage} alt="c++ language icon" />
-          <p>C++</p>
           <br />
           <img src={java} alt="java language icon" />
-          <p>Java</p>
           <br />
           <img src={python} alt="python language icon" />
-          <p>python</p>
           <br />
           <img src={html} alt="html language icon" />
-          <p>html</p>
           <br />
           <img src={css} alt="css language icon" />
-          <p>CSS</p>
           <br />
           <img src={javascript} alt="javascript language icon" />
-          <p>JavaScript</p>
         </div>
         <div className="tools">
           <h2>Tools</h2>
           <img src={word} alt="msword" />
-          <p>MS Word</p>
           <br />
           <img src={excel} alt="msexcel" />
-          <p>MS Excel</p>
           <br />
           <img src={ppt} alt="powerpoint" />
-          <p>MS PowerPoint</p>
           <br />
           <img src={vscode} alt="vscode" />
-          <p>VS Code</p>
+          
           <br />
         </div>
       </div>
