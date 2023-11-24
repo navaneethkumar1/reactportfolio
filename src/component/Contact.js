@@ -32,6 +32,7 @@ setLoading(true);
     <>
       <div className="contact">
         <div className="table_container">
+          <div className="con">
           <h1>Contact Me</h1>
 
           <form ref={form} onSubmit={sendEmail}>
@@ -64,6 +65,7 @@ Loading?
           </form>
         </div>
       </div>
+  </div>
     </>
   );
 }

@@ -2,10 +2,9 @@
 import About from './About';
 import Skills from './Skills';
 import Contact from './Contact';
-import Qualification from './Qualification';
-import Footer from './Footer';
+import Qualification from './Qualification'
 import '../Css/Home.css';
-import Certification from './Skill1';
+import Certification from './Certification';
 function Home() {
   return (
     <>
@@ -21,7 +20,6 @@ function Home() {
       <Certification/>
       <Qualification/>
       <Contact/>
-      <Footer/>
     </>
   );
 }

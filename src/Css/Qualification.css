@@ -26,12 +26,14 @@
   }
    */
    .education{
-    color:#FFFB73;
+    color:#F1EB90;
+    height: 510px;
 }
 
 .education table{
     width: 50%;
     border-collapse: collapse;
+    height:70%;
   }
   
  .education th,td {

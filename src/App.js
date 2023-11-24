@@ -7,9 +7,10 @@ import Home from './component/Home';
 import Skills from './component/Skills';
 import Qualification from "./component/Qualification";
 import Contact from "./component/Contact";
-import Certification from "./component/Skill1";
+import Certification from "./component/Certification";
 function App() {
   return (
+    <>
     <div className="Navbar">
       <BrowserRouter>
       <Navbar/>
@@ -21,8 +22,14 @@ function App() {
       <Route path='/Qualification' element={<Qualification/>}/>
       <Route path='/Contact' element={<Contact/>}/>
       </Routes>
+      <footer>
+        <div className="ftr">
+    <p> &#169; NAVANEETH KUMAR|ALL RIGHTS RESERVED</p>
+    </div>
+      </footer>
       </BrowserRouter>
       </div>
+      </>
   );
 }
 export default App;

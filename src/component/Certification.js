@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from './Card';
-import '../Css/certificate.css'
-import '../Css/Card.css'
+import '../Css/Certification.css'
 
 function Certification()
 {
